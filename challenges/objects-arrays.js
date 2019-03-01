@@ -6,6 +6,44 @@
   object name, diet, weight, length, period
 */
 
+class Dinosaur{
+  constructor(attr){
+    this.species = attr.species,
+    this.diet = attr.diet,
+    this.weight =attr.weight,
+    this.height = attr.height,
+    this.period = attr.period
+  }
+};
+
+const dino1 = new Dinosaur({
+  species:'tyrannosaurus',
+  diet:'carnivorous',
+  weight:'7000kg',
+  height: '12m',
+  period:'Late Cretaceious'
+})
+
+const dino2 = new Dinosaur({
+  species:'stegosaurus',
+  diet:'herbivorous',
+  weight:'2000kg',
+  height: '9m',
+  period:'Late Jurassic'
+})
+
+const dino3 = new Dinosaur({
+  species:'velociraptor',
+  diet:'carnivorous',
+  weight:'15kg',
+  height: '1.8m',
+  period:'Late Cretaceious'
+})
+
+
+
+
+
 // tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceious
 
 // stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
@@ -15,16 +53,16 @@
 // Using your dinosaur objects, log answers to these questions:
 
 // How much did tyrannosaurus weigh?
-console.log();
+console.log(dino1.weight);
 
 // What was the diet of a velociraptor?
-console.log();
+console.log(dino3.diet);
 
 // How long was a stegosaurus?
-console.log();
+console.log(dino2.height);
 
 // What time period did tyrannosaurus live in?
-console.log();
+console.log(dino1.period);
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
