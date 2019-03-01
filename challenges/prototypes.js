@@ -43,7 +43,7 @@ CuboidMaker.prototype.volume = function(){
 CuboidMaker.prototype.surfaceArea = function(){
   return 2* (this.len*this.width+this.len*this.height+this.width*this.height);
 }
-// CuboidMaker.prototype.surfaceArea = function (len,width,heigh)
+
 
 
 
